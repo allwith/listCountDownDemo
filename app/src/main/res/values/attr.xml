@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CountView">
+        <attr name="textColor" format="color" />
+        <attr name="bgColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="pointRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingLayout">
+        <attr name="empty_pager_layout" format="reference" />
+        <attr name="failed_pager_layout" format="reference" />
+        <attr name="loading_pager_layout" format="reference" />
+        <attr name="failed_text_id" format="reference" />
+        <attr name="empty_text_id" format="reference" />
+        <attr name="retry_button_id" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="rvp_triggerOffset" format="float" />
+        <attr name="rvp_flingFactor" format="float" />
+        <attr name="rvp_singlePageFling" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ScrollViewWrapper">
+        <attr name="wrapper_padding" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CountDownView">
+        <attr name="viewBg" format="color"/>
+        <attr name="cellBg" format="color"/>
+        <attr name="cellTextColor" format="color"/>
+        <attr name="TextColor" format="color"/>
+        <attr name="TextSize" format="dimension"/>
+        <attr name="cellTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LeftRadioButton">
+        <attr name="drawableWith" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+        <attr name="drawableLeft" format="reference" />
+    </declare-styleable>
+
+</resources>

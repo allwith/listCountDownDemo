@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c18"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:background="@color/c12"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:hint="超值特卖"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/title_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/more_icon"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/tab_deault_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_special"
+                style="@style/radio_button_style"
+                android:button="@null"
+                android:background="@drawable/tab_left_bg"
+                android:text="实惠精选"
+                android:checked="true"
+                android:drawableLeft="@drawable/tab_sepecil_selector"
+                android:drawablePadding="2dp"
+                android:textColor="@drawable/tab_text_color"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_clear"
+                style="@style/radio_button_style"
+                android:button="@null"
+                android:background="@drawable/tab_right_bg"
+                android:text="清仓甩卖"
+                android:checked="false"
+                android:drawableLeft="@drawable/tab_clear_selector"
+                android:drawablePadding="2dp"
+                android:textColor="@drawable/tab_text_color"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+     <FrameLayout
+         android:id="@+id/fragment_container"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         />
+
+</LinearLayout>
